@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Practice Test</title>
+  </head>
+  <body>
+    <h1><%=DayToday%></h1>
+
+    <ul>
+      <% for (let i = 0; i < ToDoItems.length; i++) { %>
+      <li><%=ToDoItems[i]%></li>
+      <% } %>
+    </ul>
+    <form action="/" method="post">
+      <input type="text" name="newItem" />
+      <button type="submit">Add</button>
+    </form>
+  </body>
+</html>
